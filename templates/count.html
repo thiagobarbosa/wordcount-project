@@ -1,0 +1,18 @@
+<a href="{% url 'home'%}">Start again</a> 
+
+<h1>Texto:</h1>
+  <br> {{ texto }}
+<br>
+<br>
+Existem <b>{{ count }}</b> palavras no texto
+<br>
+
+
+<h1>Word count</h1>
+{% for word,counttotal in sortedwords %}
+
+{{word}}:
+{{counttotal}}
+<br>
+
+{% endfor %}
